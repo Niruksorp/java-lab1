@@ -19,25 +19,30 @@ public class Application {
             switch (input.nextInt()) {
                 case 0: {
                     collection.addToList(de);
-                    System.out.println("dwdw");
                     break;
                 }
                 case 1: {
                     collection.deleteElement(0);
-                    System.out.println("weew");
-
                     break;
                 }
                 case 2: {
                     System.out.println(collection.toString());;
                     break;
                 }
+                case 3: {
+                    System.out.println();
+                    break;
+                }
+                case 4: {
+                    loop  = false;
+                    return;
+                }
                 default:
-                    throw new IllegalStateException("Unexpected value: " + input.nextInt());
             }
         }
 
     }
+
     public static void printMenu () {
         String menu = "1. Добавить элемент в список (TransortCollection). \n"
                 + "2. Удалить э-т из списка(TransortCollection). \n"
@@ -46,6 +51,7 @@ public class Application {
                 + "5. Выход из программы";
         System.out.println(menu);
     }
+
     enum caseVariable {
         FIRST_TYPE
         ,SECOND_TYPE
