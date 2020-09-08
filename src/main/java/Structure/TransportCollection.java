@@ -1,4 +1,4 @@
-package Obertka;
+package Structure;
 
 import Entity.Vehicle;
 
@@ -6,14 +6,14 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class TransortCollection implements TransportList{
+public class TransportCollection implements TransportList{
 
     private ArrayList<Vehicle> collection = new ArrayList<>();
 
-    public TransortCollection() {
+    public TransportCollection() {
     }
 
-    public TransortCollection(ArrayList<Vehicle> collection) {
+    public TransportCollection(ArrayList<Vehicle> collection) {
         this.collection = collection;
     }
 
@@ -42,7 +42,7 @@ public class TransortCollection implements TransportList{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TransortCollection that = (TransortCollection) o;
+        TransportCollection that = (TransportCollection) o;
         return Objects.equals(collection, that.collection);
     }
 
