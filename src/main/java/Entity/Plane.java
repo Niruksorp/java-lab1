@@ -7,6 +7,12 @@ public class Plane extends Vehicle {
     private int averageFlightAltitude;
     private String baseAirportName;
 
+    public Plane(int creatingDate, String name, int averageFlightAltitude, String baseAirportName) {
+        super(creatingDate, name);
+        this.averageFlightAltitude = averageFlightAltitude;
+        this.baseAirportName = baseAirportName;
+    }
+
     public int getAverageFlightAltitude() {
         return averageFlightAltitude;
     }

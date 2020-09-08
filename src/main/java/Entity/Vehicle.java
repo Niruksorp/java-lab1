@@ -2,7 +2,12 @@ package Entity;
 
 import java.util.Objects;
 
-public class Vehicle {
+public abstract class Vehicle {
+
+    public Vehicle(int creatingDate, String name) {
+        this.creatingDate = creatingDate;
+        this.name = name;
+    }
 
     private int creatingDate;
     private String name;

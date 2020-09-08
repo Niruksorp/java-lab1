@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class TransortCollection {
+public class TransortCollection implements TransportList{
 
     private ArrayList<Vehicle> collection = new ArrayList<>();
 

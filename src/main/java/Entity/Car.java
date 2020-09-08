@@ -7,11 +7,8 @@ public class Car extends Vehicle {
     private int mileage;
     private String carMark;
 
-    public Car() {
-    }
-
-    public Car(int mileage, String carMark) {
-        super();
+    public Car(int creatingDate, String name, int mileage, String carMark) {
+        super(creatingDate, name);
         this.mileage = mileage;
         this.carMark = carMark;
     }

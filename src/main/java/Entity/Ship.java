@@ -7,6 +7,12 @@ public class Ship extends Vehicle {
     private int coordinateLive;
     private String captainName;
 
+    public Ship(int creatingDate, String name, int coordinateLive, String captainName) {
+        super(creatingDate, name);
+        this.coordinateLive = coordinateLive;
+        this.captainName = captainName;
+    }
+
     public int getCoordinateLive() {
         return coordinateLive;
     }
