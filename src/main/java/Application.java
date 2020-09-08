@@ -30,7 +30,7 @@ public class Application {
                     break;
                 }
                 case 2: {
-                    collection.deleteElement(0);
+                    collection.deleteElement(getInt(input));
                     break;
                 }
                 case 3: {
@@ -38,7 +38,7 @@ public class Application {
                     break;
                 }
                 case 4: {
-                    System.out.println();
+                    System.out.print(collection.equals(getInt(input),getInt(input)));
                     break;
                 }
                 case 5: {
@@ -73,6 +73,7 @@ public class Application {
     }
 
     public static int getInt(final Scanner scanner) {
+        System.out.println("Введити число");
         boolean flag = false;
         while (!flag) {
             if (scanner.hasNextInt()) return scanner.nextInt();
